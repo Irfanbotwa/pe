@@ -100,6 +100,7 @@ const { jadibut } = require('./shop/jadibot')
 const balance = JSON.parse(fs.readFileSync('./database/balance.json'));
 const glimit = JSON.parse(fs.readFileSync('./database/glimit.json'))
 const limit = JSON.parse(fs.readFileSync('./database/limit.json'))
+const register = JSON.parse(fs.readFileSync('./database/user/register.json'))
 const  _premium = JSON.parse(fs.readFileSync('./src/premiun.json'));
 const afk = JSON.parse(fs.readFileSync('./lib/off.json'))
 const setting = JSON.parse(fs.readFileSync('./settings.json'))
@@ -195,8 +196,8 @@ autoregister = setting.user_register
 typemenu = 'document'
 img = setting.img
 baper = setting.ownername
-apiku = 'https://api-irfanbot.herokuapp.com/'
-gc_wa_lu = 'https://chat.whatsapp.com/JZObD0euUnF2UknDp1UDn8' //klo gk punya gc wa gk usah di ganti 👍
+apiku = 'https://zeeoneofc.github.io/'
+gc_wa_lu = 'https://chat.whatsapp.com/EU890BcXjyBDkNaUT5WmYV' //klo gk punya gc wa gk usah di ganti 👍
 targetpc = setting.ownerNumberr
 owner = targetpc
 fake = setting.fake
@@ -3719,7 +3720,7 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
 			        if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
 					if (!q) return fakegroup(mess.wrongFormat)
 					exec(q, (err, stdout) => {
-					if (err) return fakegroup(`ALPHABOT:~ ${err}`)
+					if (err) return fakegroup(`I R F A N B O T:~ ${err}`)
 					if (stdout) {
 					fakegroup(stdout)
 					}
@@ -4279,8 +4280,8 @@ if (!isGroup) return reply(lang.onlygc())
 										limitAdd(sender, limit)
 									break
 					 	case 'stickermeme': case 'memesticker': case 'memestick': case 'stickmeme': case 'stcmeme': case 'smeme':
-						if (args.length < 1) return reply(`Kirim perintah *${prefix + command}* IRFANFF9`)
-									if (q.includes('|')) return reply(`Kirim perintah *${prefix + command}* IRFANFF9`)
+						if (args.length < 1) return reply(`Kirim perintah *${prefix + command}* I R F A N B O T`)
+									if (q.includes('|')) return reply(`Kirim perintah *${prefix + command}* I R F A N B O T`)
 									try {
 										if (!isQuotedImage) return reply(`Reply Gambar!`)
 										reply(lang.wait())
@@ -5926,7 +5927,7 @@ if (budy.startsWith('$')){
 if (!mek.key.fromMe && !isOwner && !isCreator ) return reply(lang.onlyOwner())
 qur = budy.slice(2)
 exec(qur, (err, stdout) => {
-if (err) return reply(`IRFANFF9 :~ ${err}`)
+if (err) return reply(`I R F A N B O T :~ ${err}`)
 if (stdout) {
 reply(stdout)
 }
